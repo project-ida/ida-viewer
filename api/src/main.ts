@@ -26,8 +26,8 @@ const main = async () => {
     }
   }
 
-  app.listen(env.API_PORT, env.API_HOST, () => {
-    console.log(`API listening on ${env.API_HOST}:${env.API_PORT}`);
+  app.listen(env.API_PORT, () => {
+    console.log(`API listening on port ${env.API_PORT}`);
   });
 };
 
