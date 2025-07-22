@@ -4,7 +4,8 @@
   "version": "1.0.0",
   "scripts": {
     "dev": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/main.ts",
-    "build": "tsc"
+    "build": "tsc",
+    "start": "node ./dist/main.js"
   },
   "packageManager": "pnpm@10.13.1",
   "devDependencies": {

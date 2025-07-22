@@ -3,4 +3,6 @@ packages:
   - api/
 
 onlyBuiltDependencies:
+  - '@swc/core'
+  - '@tailwindcss/oxide'
   - esbuild

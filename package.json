@@ -3,11 +3,21 @@
   "version": "1.0.0",
   "description": "Web-based image viewer for optical microscopy, SEM, and other scientific imaging equipment",
   "scripts": {
-    "lint": "pnpm exec biome check --write"
+    "lint": "biome check --write",
+    "build:web": "pnpm run --filter ida-viewer-web build",
+    "build:api": "pnpm run --filter ida-viewer-api build",
+    "start:api": "pnpm run --filter ida-viewer-api start"
   },
-  "keywords": [],
-  "author": "",
+  "workspaces": [
+    "web",
+    "api"
+  ],
+  "keywords": ["nucleonics"],
+  "author": "Project IDA",
   "license": "MIT",
+  "repository": {
+    "url": "https://github.com/project-ida/ida-viewer"
+  },
   "packageManager": "pnpm@10.13.1",
   "devDependencies": {
     "@biomejs/biome": "2.1.2"
