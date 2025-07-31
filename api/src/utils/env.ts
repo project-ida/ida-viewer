@@ -5,6 +5,7 @@ const envSchema = z.object({
     .enum(['development', 'test', 'production'])
     .default('development'),
   API_PORT: z.string().default('8080').transform(Number),
+  API_HOST: z.string().default('0.0.0.0'),
   API_DATA_PATHS: z.string().default('../data/'),
 });
 
